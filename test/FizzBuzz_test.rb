@@ -1,11 +1,10 @@
-Ruby入門
-テストコードの雛形
-
 require 'minitest/autorun'
+# require './lib/FizzBuzz.rb'  
+require_relative '..//lib/FizzBuzz.rb'
 
 class FizzBuzzTest < Minitest::Test
   def test_fizz_buzz
-    assert_equal '1' , fizz_buzz(1)
+    assert_equal '1', fizz_buzz(1)
     assert_equal '2' , fizz_buzz(2)
     assert_equal 'Fizz' , fizz_buzz(3)
     assert_equal '4' , fizz_buzz(4)
@@ -13,10 +12,3 @@ class FizzBuzzTest < Minitest::Test
     assert_equal 'Fizz Buzz', fizz_buzz(15)
   end
 end
-テストを自動化
-
-プログラムと本体とテストコースを分離することができる
-
-Minitestになれたら
-test-unit ,RSpecに挑戦すること
-
